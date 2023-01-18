@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Sacramento");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu+Mono");
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  /* border-bottom: 1px groove; */
+  background-color: rgb(36, 35, 35);
+}
+
+.headerText {
+  /* font-family: serif; */
+  font-size: 35px;
+  font-family: "Sacramento", cursive;
+  opacity: 0.8;
+}
+
+.headerText a {
+  color: white;
+  text-decoration: none;
+  font-size: 38px;
+}
+
+.headerList {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.headerList li {
+  padding-left: 30px;
+}
+
+.headerList li a {
+  color: white;
+  font-size: 22px;
+  text-decoration: none;
+  opacity: 0.8;
+  font-family: "Ubuntu Mono";
+}
+
+.headerList li a:hover {
+  opacity: 0.4;
+}

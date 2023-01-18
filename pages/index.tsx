@@ -1,34 +1,55 @@
-import Head from "next/head";
-import styles from "@/styles/Home.module.css";
+import styles from "../styles/Home.module.css";
+import scoreImage from "../public/score.jpg";
+import { Header } from "./components/header";
+import { Footer } from "./components/footer";
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>my portfolio</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
-
       <div className={styles.body}>
-        <div className={styles.header}>
-          <h1 className={styles.headerText}>myPortFolio</h1>
+        <Header></Header>
 
-          <ul className={styles.headerList}>
-            <li>
-              <a href="works">Works</a>
-            </li>
-            <li>
-              <a href="about">About</a>
-            </li>
-            <li>
-              <a href="contact">Contact</a>
-            </li>
-          </ul>
+        <div className={styles.main}>
+          <div className={styles.imgContents}>
+            <p>
+              Score Arrangement <br />
+              <span>&</span> Programming
+            </p>
+          </div>
+
+          <div className={styles.contentsWrapper}>
+            <h2 className={styles.categoryText}>Category</h2>
+            <ul className={styles.contentsList}>
+              <li>
+                <div className={styles.contentItem}>
+                  <h2>
+                    <a href="works">Works</a>
+                  </h2>
+                  <p>作成したコンテンツの紹介</p>
+                </div>
+              </li>
+              <li>
+                <div className={styles.contentItem}>
+                  <h2>
+                    <a href="about">About</a>
+                  </h2>
+                  <p>プロフィール紹介</p>
+                </div>
+              </li>
+
+              <li>
+                <div className={styles.contentItem}>
+                  <h2>
+                    <a href="contact">Contact</a>
+                  </h2>
+                  <p>連絡用ページ</p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <div className={styles.main}></div>
-
-        <div className={styles.footer}></div>
+        <Footer></Footer>
       </div>
     </>
   );

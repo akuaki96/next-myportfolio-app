@@ -1,7 +1,18 @@
+import { Header } from "./components/header";
+import { Footer } from "./components/footer";
+
 const About = () => {
   return (
     <>
-      <p>aboutです</p>
+      <Header></Header>
+
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <Footer></Footer>
     </>
   );
 };
